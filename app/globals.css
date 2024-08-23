@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+#whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 16px;
+  z-index: 9999;
+}
+
+#call {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 80px;
+  margin-right: 20px;
+  z-index: 9999;
+
+}
+
+#video{
+  z-index: 1;
+
+}
+
+.container {
+  padding: 2rem;
+
+}
+
+.slider-wrapper {
+
+  position: relative;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 2rem;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+@media (max-width: 375px) {
+  #logo {
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+
+}
+
+@media (max-width: 380px) {
+  #logo {
+    margin-left: 60px;
+    margin-top: 30px;
+  }
+
+}
+
+@media (max-width:1016px) {
+  #resizeQuery {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+}
+
+
+
+/* iPad Mini (Portrait) */
+@media (max-width: 1536px) and (min-width: 768px) {
+  /* Styles specific to iPad Mini */
+}
+
+/* iPad Air (Portrait) */
+@media (max-width: 1640px) and (min-width: 768px) {
+  /* Styles specific to iPad Air */
+}
+
+/* Samsung Galaxy TabPro S (Portrait) */
+@media (max-width: 2560px) and (min-width: 768px) {
+  /* Styles specific to Samsung Galaxy TabPro S */
+}
+
+/* Asus Zenbook Fold (Portrait) */
+@media (max-width: 1920px) and (min-width: 768px) {
+   
+}
